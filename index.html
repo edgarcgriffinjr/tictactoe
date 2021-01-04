@@ -1,62 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="tutorial content">
-        <meta name="author" content="Edgar Griffin">
-        <title> Tic-Tac-Toe </title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="tutorial content">
+    <meta name="author" content="Edgar Griffin">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title> Tic-Tac-Toe </title>
 
-        <link rel="stylesheet" href="/styles/gambeboard.css">
+</head>
 
-    </head>
+<body>
 
-    <body>
-        <header class = "header"> 
-            <h1>Tic-Tac-Toe</h1> 
-             <nav id = "options">
-                <ul>
-                    <li><a id = "new-game"> New Game </a></li>
-                    <li><a id = "restart-game"> Restart Game </a></li>
-                </ul>
-            </nav>
-        </header>
+    <div class = "board" id = "board">
+        <div class = "cell" data-cell></div>
+        <div class = "cell" data-cell></div>
+        <div class = "cell" data-cell></div>
+        <div class = "cell" data-cell></div>
+        <div class = "cell" data-cell></div>
+        <div class = "cell" data-cell></div>
+        <div class = "cell" data-cell></div>
+        <div class = "cell" data-cell></div>          
+        <div class = "cell" data-cell></div>
 
-        <form class = "game-type-form">
-            <h1> Choose a game type! </h1>
-            <label for = "game-type"> Choose one </label>
-                <select id = "game-type">
-                    <option value = "ai-player"> Player vs AI </option>
-                    <option value = "player-player"> Player vs Player </option>
-                </select>
-        </form>
+    </div>
 
-        <form class = "player-name-form">
-            <h1> Input player names! </h1>
-            <input type = "text" id = "player-1" placeholder = "Player1 Name" required>
-            <input type = "text" id = "player-2" placeholder = "Player2 Name" required>
-            <button type = "button" id = "submit-btn"> Start Game </button>
-        </form>
-
-        <div class = "gameboard">
-            <div id = "block-0" class = "block"></div>
-            <div id = "block-1" class = "block"></div>
-            <div id = "block-2" class = "block"></div>
-            <div id = "block-3" class = "block"></div>
-            <div id = "block-4" class = "block"></div>
-            <div id = "block-5" class = "block"></div>
-            <div id = "block-6" class = "block"></div>
-            <div id = "block-7" class = "block"></div>
-            <div id = "block-8" class = "block"></div>
-        </div>
-
-        <form class = "replay">
-            <button type = "buttton" id = "replay-btn"> Play Again? </button>
-        </form>
-    </body>
+    <div class = "winner" id = "winningMessage">
+        <div data-winning-message-text>Wins</div>
+        <button id = "restartButton">Restart</button>
+    </div>
+</body>
 </html>
-
-
-
-
-                
-
